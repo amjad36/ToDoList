@@ -37,9 +37,15 @@
 		954E2EBB2BE360040095B226 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 954E2EBA2BE360040095B226 /* GoogleService-Info.plist */; };
 		954E2EBD2BE362020095B226 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954E2EBC2BE362020095B226 /* AppDelegate.swift */; };
 		954E58DC2BE2110500EA37F3 /* ToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954E58DB2BE2110500EA37F3 /* ToDoListApp.swift */; };
-		954E58DE2BE2110500EA37F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954E58DD2BE2110500EA37F3 /* ContentView.swift */; };
+		954E58DE2BE2110500EA37F3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954E58DD2BE2110500EA37F3 /* MainView.swift */; };
 		954E58E02BE2111900EA37F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 954E58DF2BE2111900EA37F3 /* Assets.xcassets */; };
 		954E58E32BE2111900EA37F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 954E58E22BE2111900EA37F3 /* Preview Assets.xcassets */; };
+		95972F8E2BE370DD00F4DBBD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95972F8D2BE370DD00F4DBBD /* LoginView.swift */; };
+		95972F902BE3710000F4DBBD /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95972F8F2BE3710000F4DBBD /* LoginViewModel.swift */; };
+		95972F932BE3713A00F4DBBD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95972F922BE3713A00F4DBBD /* User.swift */; };
+		95972F962BE3847300F4DBBD /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95972F952BE3847300F4DBBD /* HeaderView.swift */; };
+		95972F9A2BE3AA4A00F4DBBD /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95972F992BE3AA4A00F4DBBD /* RegisterView.swift */; };
+		95972F9C2BE3AA5A00F4DBBD /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95972F9B2BE3AA5A00F4DBBD /* RegisterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,9 +53,15 @@
 		954E2EBC2BE362020095B226 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		954E58D82BE2110500EA37F3 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		954E58DB2BE2110500EA37F3 /* ToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListApp.swift; sourceTree = "<group>"; };
-		954E58DD2BE2110500EA37F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		954E58DD2BE2110500EA37F3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		954E58DF2BE2111900EA37F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		954E58E22BE2111900EA37F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		95972F8D2BE370DD00F4DBBD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		95972F8F2BE3710000F4DBBD /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		95972F922BE3713A00F4DBBD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		95972F952BE3847300F4DBBD /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		95972F992BE3AA4A00F4DBBD /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		95972F9B2BE3AA5A00F4DBBD /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +123,11 @@
 			children = (
 				954E58DB2BE2110500EA37F3 /* ToDoListApp.swift */,
 				954E2EBC2BE362020095B226 /* AppDelegate.swift */,
-				954E58DD2BE2110500EA37F3 /* ContentView.swift */,
+				954E58DD2BE2110500EA37F3 /* MainView.swift */,
+				95972F942BE3845E00F4DBBD /* Views */,
+				95972F912BE3711800F4DBBD /* Models */,
+				95972F8C2BE370AC00F4DBBD /* Login */,
+				95972F982BE3AA2B00F4DBBD /* Register */,
 				954E58DF2BE2111900EA37F3 /* Assets.xcassets */,
 				954E2EBA2BE360040095B226 /* GoogleService-Info.plist */,
 				954E58E12BE2111900EA37F3 /* Preview Content */,
@@ -125,6 +141,40 @@
 				954E58E22BE2111900EA37F3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		95972F8C2BE370AC00F4DBBD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				95972F8D2BE370DD00F4DBBD /* LoginView.swift */,
+				95972F8F2BE3710000F4DBBD /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		95972F912BE3711800F4DBBD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				95972F922BE3713A00F4DBBD /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		95972F942BE3845E00F4DBBD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				95972F952BE3847300F4DBBD /* HeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		95972F982BE3AA2B00F4DBBD /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				95972F992BE3AA4A00F4DBBD /* RegisterView.swift */,
+				95972F9B2BE3AA5A00F4DBBD /* RegisterViewModel.swift */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +281,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				954E2EBD2BE362020095B226 /* AppDelegate.swift in Sources */,
-				954E58DE2BE2110500EA37F3 /* ContentView.swift in Sources */,
+				954E58DE2BE2110500EA37F3 /* MainView.swift in Sources */,
+				95972F932BE3713A00F4DBBD /* User.swift in Sources */,
+				95972F8E2BE370DD00F4DBBD /* LoginView.swift in Sources */,
+				95972F902BE3710000F4DBBD /* LoginViewModel.swift in Sources */,
+				95972F9A2BE3AA4A00F4DBBD /* RegisterView.swift in Sources */,
 				954E58DC2BE2110500EA37F3 /* ToDoListApp.swift in Sources */,
+				95972F9C2BE3AA5A00F4DBBD /* RegisterViewModel.swift in Sources */,
+				95972F962BE3847300F4DBBD /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
