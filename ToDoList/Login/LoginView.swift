@@ -8,38 +8,42 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State var email: String = ""
-    @State var password: String  = ""
+    @ObservedObject var viewModel = LoginViewModel()
 
     var body: some View {
         NavigationView {
             VStack {
-                HeaderView()
+                HeaderView(title: "To Do List",
+                           subtitle: "Get things done",
+                           rotationDegree: 15, 
+                           backgroundColor: .pink)
 
                 Spacer()
 
                 Form {
-                    TextField("Email Address", text: $email)
+                    if !viewModel.errorMessage.isEmpty {
+                        Text(viewModel.errorMessage)
+                            .foregroundStyle(.red)
+                            .font(.footnote)
+                    }
+
+                    TextField("Email Address", text: $viewModel.email)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .keyboardType(.emailAddress)
+                        .autocorrectionDisabled()
+                        .textInputAutocapitalization(.never)
                         .listRowSeparator(.hidden)
-                    SecureField("Password", text: $password)
+                    
+                    SecureField("Password", text: $viewModel.password)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .listRowSeparator(.hidden)
 
-                    Button {
-                        loginButtonPressed()
-                    } label: {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 10)
-                                .foregroundStyle(.blue)
-
-                            Text("Login")
-                                .background(.blue)
-                                .foregroundStyle(.white)
-                        }
+                    TLButton(title: "Login",
+                             background: .blue) {
+                        viewModel.login()
                     }
                 }
+                .offset(y: -50)
 
                 VStack {
                     Text("New Aaround here?")
