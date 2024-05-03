@@ -46,6 +46,7 @@
 		95972F962BE3847300F4DBBD /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95972F952BE3847300F4DBBD /* HeaderView.swift */; };
 		95972F9A2BE3AA4A00F4DBBD /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95972F992BE3AA4A00F4DBBD /* RegisterView.swift */; };
 		95972F9C2BE3AA5A00F4DBBD /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95972F9B2BE3AA5A00F4DBBD /* RegisterViewModel.swift */; };
+		95972F9E2BE4B69400F4DBBD /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95972F9D2BE4B69400F4DBBD /* TLButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		95972F952BE3847300F4DBBD /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		95972F992BE3AA4A00F4DBBD /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		95972F9B2BE3AA5A00F4DBBD /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		95972F9D2BE4B69400F4DBBD /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				95972F952BE3847300F4DBBD /* HeaderView.swift */,
+				95972F9D2BE4B69400F4DBBD /* TLButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				954E58DC2BE2110500EA37F3 /* ToDoListApp.swift in Sources */,
 				95972F9C2BE3AA5A00F4DBBD /* RegisterViewModel.swift in Sources */,
 				95972F962BE3847300F4DBBD /* HeaderView.swift in Sources */,
+				95972F9E2BE4B69400F4DBBD /* TLButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
