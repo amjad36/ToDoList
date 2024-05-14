@@ -20,7 +20,12 @@ class LoginViewModel: ObservableObject {
             return
         }
 
-        Auth.auth().signIn(withEmail: email, password: password)
+        Auth.auth().signIn(withEmail: email, password: password) { result, error in
+            guard let uid = result?.user.uid else {
+                return
+            }
+            debugPrint("User login Id: \(uid)")
+        }
     }
 
     private func validate() -> Bool {

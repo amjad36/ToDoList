@@ -55,14 +55,6 @@ struct LoginView: View {
             }
         }
     }
-
-    func loginButtonPressed() {
-
-    }
-
-    func registerButtonPressed() {
-
-    }
 }
 
 #Preview {
